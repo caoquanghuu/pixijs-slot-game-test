@@ -1,0 +1,83 @@
+[
+    {
+        "name":"preLoad",
+        "assets": [
+            {
+                "name": "logo",
+                "srcs": "assets/units/logo.png"
+            },
+            {
+                "name": "1",
+                "srcs": "assets/units/symbol_1.png"
+            },
+            {
+                "name": "1-blur",
+                "srcs": "assets/units/symbol_1_blur.png"
+            },
+            {
+                "name": "2",
+                "srcs": "assets/units/symbol_2.png"
+            },
+            {
+                "name": "2-blur",
+                "srcs": "assets/units/symbol_2_blur.png"
+            },
+            {
+                "name": "3",
+                "srcs": "assets/units/symbol_3.png"
+            },
+            {
+                "name": "3-blur",
+                "srcs": "assets/units/symbol_3_blur.png"
+            },
+            {
+                "name": "4",
+                "srcs": "assets/units/symbol_4.png"
+            },
+            {
+                "name": "4-blur",
+                "srcs": "assets/units/symbol_4_blur.png"
+            },
+            {
+                "name": "5",
+                "srcs": "assets/units/symbol_5.png"
+            },
+            {
+                "name": "5-blur",
+                "srcs": "assets/units/symbol_5_blur.png"
+            },
+            {
+                "name": "6",
+                "srcs": "assets/units/symbol_6.png"
+            },
+            {
+                "name": "6-blur",
+                "srcs": "assets/units/symbol_6_blur.png"
+            },
+            {
+                "name": "7",
+                "srcs": "assets/units/symbol_7.png"
+            },
+            {
+                "name": "7-blur",
+                "srcs": "assets/units/symbol_7_blur.png"
+            },
+            {
+                "name": "8",
+                "srcs": "assets/units/symbol_8.png"
+            },
+            {
+                "name": "8-blur",
+                "srcs": "assets/units/symbol_8_blur.png"
+            },
+            {
+                "name": "K",
+                "srcs": "assets/units/symbol_K.png"
+            },
+            {
+                "name": "K-blur",
+                "srcs": "assets/units/symbol_K_blur.png"
+            }
+        ]
+    }
+]

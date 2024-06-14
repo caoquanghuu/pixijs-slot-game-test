@@ -32,22 +32,11 @@ export class GameScene extends Container {
         this._useEventEffect();
 
         // create reels and their default data
-        const reel1DefaultData = splitData(AppConstants.defaultBoard, 1);
-        const reel1 = new Reel(reel1DefaultData, 0, this._releaseObject.bind(this), this._returnObject.bind(this));
-
-        const reel2DefaultData = splitData(AppConstants.defaultBoard, 2);
-        const reel2 = new Reel(reel2DefaultData, 1, this._releaseObject.bind(this), this._returnObject.bind(this));
-
-        const reel3DefaultData = splitData(AppConstants.defaultBoard, 3);
-        const reel3 = new Reel(reel3DefaultData, 2, this._releaseObject.bind(this), this._returnObject.bind(this));
-
-        const reel4DefaultData = splitData(AppConstants.defaultBoard, 4);
-        const reel4 = new Reel(reel4DefaultData, 3, this._releaseObject.bind(this), this._returnObject.bind(this));
-
-        const reel5DefaultData = splitData(AppConstants.defaultBoard, 5);
-        const reel5 = new Reel(reel5DefaultData, 4, this._releaseObject.bind(this), this._returnObject.bind(this));
-
-        this._reels.push(reel1, reel2, reel3, reel4, reel5);
+        for (let i = 0; i < 5 ; i++) {
+            const reelData = splitData(AppConstants.defaultBoard, i + 1);
+            const reel = new Reel(reelData, i, this._releaseObject.bind(this), this._returnObject.bind(this));
+            this._reels.push(reel);
+        }
     }
 
     public init() {

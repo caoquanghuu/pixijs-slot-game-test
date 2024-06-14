@@ -110,7 +110,6 @@ export class Reel {
 
         // check data received and send event to game scene, this happen in case reel got data or reel stopping
         if (!this._isDataResponded && !this._isRunning) {
-
             // to define this is case reel stopping and got no data.
             if (!this._dataResponded) return;
 

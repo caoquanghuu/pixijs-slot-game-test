@@ -56,15 +56,16 @@ export namespace AppConstants {
         height: 150
     };
 
-    export const speed = 400;
+    // if change speed too fast, please handle positionYMaxOfSymbol by increase it until last result not be remove
+    export const speed = 3000;
 
     export const timeDelayAfterGotData = 2000;
     export const timeDelayBetweenReel = 50;
-    export const timeCreateSymbol = speed / 2;
+    export const timeCreateSymbol = (symbolSize.height / (speed) * 1000);
 
-    export const positionYMaxOfSymbol = 250;
+    export const positionYMaxOfSymbol = 450;
     export const positionYCreateSymbol = -375;
-    export const positionYStopSpin = -375;
+    export const positionYStopSpin = -210;
     export const position = {
         logo: { x: AppSize.width / 2, y: 100 },
         mask: { x: 0, y: 275 }
@@ -82,7 +83,7 @@ export namespace AppConstants {
     blurFilter2.blur = 5;
 
     export const acceleration = {
-        dropDown : 2,
+        dropDown : 1,
         maxSlow: -1,
         slowDownRate: 0.03
     };

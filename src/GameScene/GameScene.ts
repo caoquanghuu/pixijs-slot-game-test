@@ -32,7 +32,7 @@ export class GameScene extends Container {
         this._useEventEffect();
 
         // create reels and their default data
-        for (let i = 0; i < 5 ; i++) {
+        for (let i = 0; i < AppConstants.numberOfReels ; i++) {
             const reelData = splitData(AppConstants.defaultBoard, i + 1);
             const reel = new Reel(reelData, i, this._releaseObject.bind(this), this._returnObject.bind(this));
             this._reels.push(reel);
@@ -139,7 +139,7 @@ export class GameScene extends Container {
                     this._runningTime++;
 
                     // in case the last reel have been assign data
-                    if (idx === 4) {
+                    if (idx === (AppConstants.numberOfReels - 1)) {
                         this._runningTime = -1;
                         this._dataResponded = [];
                         this._isDataResponded = false;
@@ -162,7 +162,7 @@ export class GameScene extends Container {
                     this._runningTime++;
 
                     // in case the last reel was success running
-                    if (idx === 4) this._runningTime = -1;
+                    if (idx === (AppConstants.numberOfReels - 1)) this._runningTime = -1;
                 }
             });
         }

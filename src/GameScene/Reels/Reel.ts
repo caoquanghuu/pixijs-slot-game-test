@@ -145,7 +145,7 @@ export class Reel {
                     this._dataResponded = [];
 
                     // the spin text will available again
-                    if (this._reelId === 4) {
+                    if (this._reelId === (AppConstants.numberOfReels - 1)) {
                         Emitter.emit(AppConstants.eventName.activeSpinButton, null);
                     }
                 }

@@ -48,6 +48,8 @@ export namespace AppConstants {
         startSpin: 'Start Spin'
     };
 
+
+    // free to change number of reels. but when fix more than 5. please handle data sever and default board.
     export const numberOfReels = 5;
     export const numberOfRows = 3;
 
